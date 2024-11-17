@@ -1,0 +1,212 @@
+:root {
+    --primary-color: #4ade80;
+    --primary-hover: #22c55e;
+    --secondary-color: #22c55e;
+    --dark-bg: #111827;
+    --darker-bg: #0f172a;
+    --card-bg: #1e293b;
+    --text-primary: #f3f4f6;
+    --text-secondary: #d1d5db;
+    --text-muted: #9ca3af;
+    --border-color: #2d3748;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-bg);
+    color: var(--text-primary);
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #0a0f1c;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color) !important;
+}
+
+.nav-link {
+    color: #e5e7eb !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.nav-link.active {
+    color: var(--primary-color) !important;
+    font-weight: 600;
+}
+
+/* Card Styles */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: var(--darker-bg);
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+.card-body {
+    color: var(--text-secondary);
+}
+
+.card-title {
+    color: var(--text-primary);
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--darker-bg);
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+.btn-success {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--darker-bg);
+    font-weight: 600;
+}
+
+.btn-success:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--darker-bg);
+    color: var(--text-muted);
+    border-top: 1px solid var(--border-color);
+}
+
+/* Form Controls */
+.form-control {
+    background-color: var(--dark-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+.form-control:focus {
+    background-color: var(--dark-bg);
+    border-color: var(--primary-color);
+    color: var(--text-primary);
+    box-shadow: 0 0 0 0.25rem rgba(74, 222, 128, 0.25);
+}
+
+.form-control::placeholder {
+    color: var(--text-muted);
+}
+
+.form-label {
+    color: var(--text-secondary);
+}
+
+/* Resultado Styles */
+#resultado, #resultadoMoto {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color);
+}
+
+.economia-positiva {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.economia-negativa {
+    color: #ef4444;
+    font-weight: bold;
+}
+
+/* Benefit Cards */
+.benefit-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+.benefit-icon {
+    color: var(--primary-color);
+}
+
+/* Calculator Section */
+.calculator-section {
+    background: linear-gradient(rgba(74, 222, 128, 0.1), rgba(74, 222, 128, 0.05));
+    border: 1px solid var(--border-color);
+}
+
+/* Text Colors */
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+.lead {
+    color: var(--text-secondary);
+}
+
+/* Background Colors */
+.bg-light {
+    background-color: var(--card-bg) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-success {
+    background-color: var(--secondary-color) !important;
+}
+
+/* List Items */
+.list-unstyled li {
+    color: var(--text-secondary);
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--primary-hover);
+}
+
+/* Hover Effects */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 3rem 0;
+}
+
+.display-4, .display-5, h1, h2, h3 {
+    color: var(--text-primary);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .benefit-card {
+        margin-bottom: 1.5rem;
+    }
+} 
